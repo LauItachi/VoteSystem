@@ -42,7 +42,7 @@ contract VoteSystem {
     struct Vote{
         uint voteId;
         address poster; // 投票发起者
-        string content; // 投票内容（如：关于xxxx的投票）
+        bytes32 content; // 投票内容（如：关于xxxx的投票）
         address[] participants; // 投票参与者数组
         bool[] choices;  // 选票数组
         bool state; // 投票的状态，true-开启，false-关闭
@@ -62,11 +62,11 @@ contract VoteSystem {
     uint CODE_UNKNOW_ERROR= 3405; // 未知错误
      
     // 合约构造函数
-    constructor(uint s) public { // 开启系统时给定参与人数
+    function VoteSystem(uint s) public { // 开启系统时给定参与人数
         sum = s;
     }
     // 发起一组投票
-    function postVote(string content) public returns(uint){
+    function postVote(bytes32 content) public returns(uint){
         uint resultCode = CODE_UNKNOW_ERROR; // 默认未知错误
         address[] memory participants; // 投票参与者数组
         bool[] memory choices;
