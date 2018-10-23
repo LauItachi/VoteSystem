@@ -2,13 +2,13 @@ package cn.hyperchain.application.common.constant;
 
 
 /**
- * @author sunligang
+ * @author ZhaoCong
  */
 
 public enum Code {
     SUCCESS(0, "成功"),
-    INVOKE_FAIL(0, "成功");
-
+   // INVOKE_FAIL(0, "成功");
+   INVOKE_FAIL(1,"失败");
 
 
 

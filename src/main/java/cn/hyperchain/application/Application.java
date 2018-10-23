@@ -5,7 +5,6 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
- * Cloned from https://github.com/qulian-netease/minata
  * @author sunligang
  * @date 2018/07/05
  */
