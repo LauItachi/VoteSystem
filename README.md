@@ -23,9 +23,20 @@ Blockchain development engineer
 
 ---
 
+#### 运行结果
+
+执行顺序：postVote -> voting -> endVoting
+
+返回值分别为3300, 3300, 3402, 即为操作正常, 操作正常, 投票通过
+
+![运行结果](image/screencapture-localhost-8080-swagger-ui-html-2018-10-23-12_39_10.jpg)
+
+
+---
+
 #### 系统结构
 
-
+TBD
 
 
 #### 码云特技
